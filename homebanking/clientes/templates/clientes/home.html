@@ -1,0 +1,115 @@
+{% extends 'clientes/base.html' %}
+{% load static %}
+    {% block content %}
+        <section class="pesos home">
+            <div class=" card saldo-pesos">
+                <div>
+                    <a class="saldo">$</a>
+                    <a class="saldo">2000,00</a>
+                </div>
+                <div class="mover-plata">
+                    <button class="item-mover-plata">Ingresar dinero</button>
+                    <button class="item-mover-plata">Transferir dinero</button>
+                    <button class="item-mover-plata">Sacar efectivo</button>
+                </div>
+            </div>
+            <div class="home card movimientos">
+                <p class="card-title">Tus movimientos</p>
+                <ul class="card-mov-ul">
+                    <li class="card-mov-li">
+                        <span>Te transfieron dinero</span>
+                        <span>$50</span>
+                    </li>
+                    <li class="card-mov-li">
+                        <span>Te transfieron dinero</span>
+                        <span>$50</span>
+                    </li>
+                    <li class="card-mov-li">
+                        <span>Te transfieron dinero</span>
+                        <span>$50</span>
+                    </li>
+                    <li class="card-mov-li">
+                        <span>Te transfieron dinero</span>
+                        <span>$50</span>
+                    </li>
+                    <li class="card-mov-li">
+                        <span>Te transfieron dinero</span>
+                        <span>$50</span>
+                    </li>
+                    <li class="card-mov-li">
+                        <span>Te transfieron dinero</span>
+                        <span>$50</span>
+                    </li>
+                    <li class="card-mov-li">
+                        <span>Te transfieron dinero</span>
+                        <span>$50</span>
+                    </li>
+                </ul>
+                <button class="button"><div class="arrow-down"><i class="fa-solid fa-chevron-down"></i></div></button>
+            </div>
+        </section>
+        <section>
+            <div class="dolar">
+                <div class="container"></div>
+                <button class="redux" onclick="boxReduce()"><div class="arrow-down"><i class="fa-solid fa-chevron-down"></i></div></button>
+            </div>
+            <div class="home">
+                <div class="card balance-cripto ">
+                    <p class="card-title">Criptomonedas</p>
+                    <div class="card-balance">
+                        <p>Balance total</p>
+                        <p>500USD</p>
+                    </div>
+                    <div class="coins">
+                        <div class="coin">
+                            <span>BTC</span>
+                            <span>0.002</span>
+                        </div>
+                        <div class="coin">
+                            <span>ETH</span>
+                            <span>0.034</spam>
+                        </div>
+                        <div class="coin">
+                            <span>USDT</span>
+                            <span>100</span>
+                        </div>
+                    </div>
+                    <button><div class="arrow-down"><i class="fa-solid fa-chevron-down"></i></div></button>
+                </div>
+
+                <div class="card movimientos">
+                    <p class="card-title">Tus movimientos Cripto</p>
+                    <ul class="card-mov-ul">
+                        <li class="card-mov-li">
+                            <span>Te transfieron dinero</span>
+                            <span>$50</span>
+                        </li>
+                        <li class="card-mov-li">
+                            <span>Te transfieron dinero</span>
+                            <span>$50</span>
+                        </li>
+                        <li class="card-mov-li">
+                            <span>Te transfieron dinero</span>
+                            <span>$50</span>
+                        </li>
+                        <li class="card-mov-li">
+                            <span>Te transfieron dinero</span>
+                            <span>$50</span>
+                        </li>
+                        <li class="card-mov-li">
+                            <span>Te transfieron dinero</span>
+                            <span>$50</span>
+                        </li>
+                        <li class="card-mov-li">
+                            <span>Te transfieron dinero</span>
+                            <span>$50</span>
+                        </li>
+
+                    </ul>
+                    <button class="button"><div class="arrow-down"><i class="fa-solid fa-chevron-down"></i></div></button>
+                </div>
+            </div>
+        </section>
+
+
+{% endblock %}
