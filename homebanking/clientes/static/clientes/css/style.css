@@ -1,154 +1,173 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
 * {
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+html {
+  background-color: #fffdf6;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
-  background-color: #132643;
-  /* background-image: linear-gradient(to bottom, #132643 , #d4d8dc); */
-  /* background: linear-gradient(180deg, #132643 5%, #fc7551 100%); */
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-}
-
-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  background: none;
-  border-radius: 0.3rem;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #c2dcff;
-}
-
-button:active {
-  background-color: #b5d4ff;
-}
-
-.imagen-logo {
-  width: 12rem;
-}
-
-.logo {
-  margin: auto;
-  padding: 0.7rem 0 0.45rem 0;
+  background-color: #fffdf6;
 }
 
 .header {
-  /* background-color:#45fdc6; */
+  background-color: #132643;
+  color: white;
+  padding: -2rem 0rem;
+  height: min-content;
+  width: 100%;
+}
+
+.logo-contenedor {
   display: flex;
-}
-
-.home .saldo {
-  font-weight: 700;
-  font-size: 1.7rem;
-}
-
-.card {
-  background-color: rgb(255, 255, 255);
-  border-radius: 0.3rem;
-}
-
-.home .card {
-  display: flex;
-  flex-direction: column;
-  height: fit-content;
-  padding: 1rem 1rem 1rem 1rem;
-  margin: 1rem;
-  box-shadow: 0rem 0.3rem 0.6rem #0000001e;
-}
-
-.button-saldo {
-  width: auto;
-}
-
-.mover-plata {
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-  margin: 0.75rem 0 0 0;
-}
-
-.item-mover-plata {
-  margin: 0.5rem 0.2rem 0 0.2rem;
-  border-radius: 0.4rem;
-  padding: 0.5rem;
-  background: #dbe9fd;
-  /* background: linear-gradient(90deg, rgba(19,38,67,1) 22%, rgba(252,117,81,1) 100%); */
-  font-size: 0.7rem;
-  font-weight: 500;
-  color: #42618f;
-}
-
-.card .balance-cripto .card-title {
-  margin: 0;
-  font-size: 1.3rem;
-  font-weight: 700;
-}
-
-.card-balance {
-  display: flex;
-  justify-content: space-between;
-  font-weight: 600;
-}
-
-.coin {
-  display: flex;
-  justify-content: space-between;
-  height: 2rem;
+  justify-content: space-around;
   align-items: center;
-  padding: 0.3rem;
-  margin: 0.3rem 0 0.3rem 0;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #42618f;
-  background-color: #dbe9fd;
-  border-radius: 0.4rem;
+  padding: 1rem;
 }
 
-.arrow-down {
+.logo-contenedor a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu {
+  margin-right: 15%;
+  margin-top: 0%;
+  display: none;
+}
+
+.online input {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 100;
+  color: #000;
+  background-color: #fffdf6;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  float: right;
+  display: relative;
+  margin-left: 10px;
+}
+
+.online input:active {
+  transform: translateY(-1px);
+}
+
+.online input:hover {
+  background-color: #26e0a7;
+  box-shadow: 0px 10px 20px rgba(194, 194, 194, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+.carousel-mobile {
   display: flex;
   justify-content: center;
+}
+#carouselExampleFade {
+  position: relative;
+  width: 70%;
+  height: 50%;
   align-items: center;
-  color: #42618f;
-  /* height: 1rem; */
-  font-size: 1.2rem;
+  margin-left: 15%;
+  margin-bottom: 5%;
 }
 
-.home .card .movimientos {
+.carousel-item img {
+  border-radius: 20px;
+}
+
+.main {
+  padding: 0 3rem;
+}
+.welcome {
+  font-size: 35px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.welcome b {
+  color: #26e0a7;
+}
+
+.home1 {
+  margin: 5% 0;
+  display: grid;
+  justify-content: center;
+  gap: 6rem;
+  grid-auto-rows: 10rem;
+  grid-template-columns: repeat(3, minmax(10rem, 20rem));
+  grid-auto-flow: dense;
+}
+
+.home1 .card1 {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 1rem;
+  background: #fffdf6;
+  border-radius: 5px;
+  box-shadow: 0 0.3rem 0.3rem 0.2rem #919191;
+  transition: all 0.25s;
   display: flex;
-  list-style-type: none;
-  /* height: fit-content; */
-  background-color: rgb(255, 255, 255);
-  border-radius: 0.3rem;
-  padding: 1rem 1rem 1rem 1rem;
-  margin: 1rem;
-  box-shadow: 0 0.4rem 0.5rem #0000001e;
+  justify-content: center;
+  cursor: pointer;
 }
 
-.card-mov-ul {
+.card1 a {
+  text-decoration: none;
+}
+
+.icon {
+  display: flex;
+  max-block-size: 5rem;
+  position: relative;
+  margin-bottom: 25px;
+  align-items: center;
+}
+
+.home1 .card1:hover {
+  transform: translateY(-15px);
+  box-shadow: 5px 5px 10px 5px #6f6e6e;
+  background-color: #fffdf6;
+  transform: translateY(-8px);
+}
+
+.home1 .card1:active {
+  transform: translateY(2px);
+}
+
+.card-header1 {
+  font-style: normal;
+  font-weight: bold;
   display: flex;
   flex-direction: column;
-  font-weight: 200;
-  color: rgb(102, 102, 102);
-  padding: 0;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin-top: 0rem;
 }
 
-.card-mov-li {
-  display: flex;
-  font-weight: 500;
-  justify-content: space-between;
-  padding: 0.5rem 0 0.5rem 0;
-  height: fit-content;
+.text-card {
+  justify-content: center;
+  text-align: center;
+
+  font-size: 1rem;
+  font-style: normal;
+  color: #1c536e;
+  cursor: pointer;
+}
+
+ol {
+  list-style: none;
 }
 
 footer {
@@ -156,28 +175,26 @@ footer {
   bottom: 0;
   height: 5%;
   background-color: #132643;
-  padding: 1.2rem;
+  padding: 3rem;
   color: #ffffff;
   text-align: center;
   font-size: small;
 }
 
-ol,
+p {
+  display: inline-block;
+  text-align: center;
+  margin-top: 20px;
+}
+
 li {
   list-style: none;
   display: inline-block;
-  padding: 0;
-}
-
-.footer-links {
-  display: none;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+  margin: 20px;
 }
 
 #link {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   text-decoration: underline;
   font-size: medium;
   font-weight: 500;
@@ -187,62 +204,84 @@ li {
   color: #000;
 }
 
-.dolar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.mobile-login {
+  visibility: hidden;
+  display: none;
 }
 
-.redux {
-  padding: 0.3rem;
-  width: 30%;
-  background-color: #ffffff;
-}
-
-@media (min-width: 768px) {
-  body {
-    background: #132643;
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .socio img {
+    height: 20%;
+    width: 70%;
+    margin-left: 17%;
   }
-  main {
-    display: flex;
-    flex-flow: row wrap;
+
+  .online .register {
+    width: 170px;
+    height: 50px;
     justify-content: center;
-    align-content: center;
-    /* justify-items: center; */
-    max-width: 100rem;
-    font-size: 150%;
+    background-color: #26e0a7;
+    color: white;
+  }
+
+  .header {
     padding: 0;
-    margin: auto;
   }
-  .saldo {
-    font-size: 2.8rem;
+
+  #carouselExampleFade {
+    margin: 10%;
+    width: 70%;
+    padding: 0;
+    display: none;
   }
-  /* .mover-plata {
-          justify-content: flex-start ;
-      } */
-  .item-mover-plata {
-    font-size: 1.1rem;
-    flex-grow: 1;
+
+  .online .banking {
+    width: 8rem;
+    height: 2rem;
+    font-size: 8px;
+    padding-left: 0.7rem;
   }
-  .home .card .balance-cripto .card-title {
-    font-size: 2rem;
-    font-weight: 700;
+
+  header .register {
+    visibility: hidden;
+    display: none;
   }
-  .card-mov-li {
-    font-weight: 400;
-    padding: 0.7rem 0 0.7rem 0;
+
+  .mobile-login {
+    visibility: visible;
+    display: block;
+    border-radius: 30px;
+    position: fixed;
+    right: 50px;
+    bottom: 100px;
+    box-shadow: 5px 5px 5px 2px rgb(156, 143, 143);
+    width: 170px;
+    height: 50px;
+    z-index: 100;
   }
-  .coin {
-    font-weight: 500;
+
+  .contenedor {
+    margin-right: 10rem;
+    width: 1rem;
+    padding: 0.5rem;
+  }
+
+  #log {
+    width: 10rem;
+  }
+
+  .card1 .card-header1 .title {
+    padding: 5px;
     font-size: 1rem;
-    height: 1rem;
-    padding: 1.5rem 0.7rem 1.5rem 0.7rem;
   }
-  .movimientos {
-    width: 45rem;
-    height: fit-content;
+
+  .home1 {
+    justify-content: center;
+    gap: 1rem;
+    grid-template-columns: repeat(2, minmax(10rem, 1fr));
   }
-  .footer-links {
-    display: flex;
+
+  .welcome {
+    font-size: 1.7rem;
   }
 }
