@@ -1,0 +1,52 @@
+{% extends 'clientes/base.html' %} {%load static%}  {%block content%}
+<main class="main">
+  <div class="login">
+    <a class="btn-help" href="../ayuda/ayuda.html"> Ayuda </a>
+
+    <div class="login__container-logo">
+      <a href="../index.html">
+        <img
+          src="{%static 'clientes/img/logo-itbank-negro.png' %}"
+          alt="Logo Banco"
+          class="logo"
+        />
+      </a>
+    </div>
+
+    <form class="form-login">
+      <div class="inputs-box">
+        <div class="input-container">
+          <input type="name" placeholder="Ingresa tu DNI" />
+        </div>
+        <div class="input-container">
+          <input type="name" placeholder="Ingresa tu usuario" />
+        </div>
+        <div class="input-container">
+          <input
+            type="password"
+            class="form-control"
+            id="floatingPassword"
+            placeholder="Clave"
+          />
+        </div>
+
+        <div class="checkbox-container input-container">
+          <input class="checkbox-input" type="checkbox" value="remember-me" />
+          <label class="checkbox-label">Recordar DNI y Usuario</label>
+        </div>
+        <div class="input-container">
+          <a href="../home/home.html">
+            <button type="button" class="btn-login">Iniciar Sesión</button>
+          </a>
+        </div>
+        <a class="help-login" href="#">Olvidé / Bloquee mis claves</a>
+        <p class="register-text">Si es tu primera vez o necesitás el Usuario</p>
+        <a class="register-link" href="../register/registro.html"
+          >Registrarme</a
+        >
+      </div>
+    </form>
+  </div>
+  <div class="bg-img"></div>
+</main>
+{%endblock%}
