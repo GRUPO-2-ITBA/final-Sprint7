@@ -10,7 +10,7 @@ class Tarjeta(models.Model):
     card_issue_date = models.TextField()
     card_cvv = models.CharField(max_length=3)
     card_type = models.TextField()
-    customer = models.ForeignKey('Cliente', models.DO_NOTHING)
+    customer_id = models.IntegerField()
     card_brand_id = models.IntegerField()
 
     class Meta:
